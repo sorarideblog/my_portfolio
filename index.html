@@ -1,253 +1,290 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <title>ポートフォリオサイト</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta nmae="twitter:site" content="@sorarideblog">
-  <meta name="twitter:title" content="ポートフォリオサイト">
-  <meta name="twitter:description" content="そららいどのプログラミング経歴をまとめました。">
-  <meta name="twitter:image" content="https://sorarideblog.com/projects/portfolio/assets/twitter_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <style>
-    html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Noto Sans JP', sans-serif;
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-    }
-  
-    header {
-      width: 100%;
-      margin: 0;
-      text-align: center;
-      color: #5d5d5d;
-    }
-    header h1 {
-      transition-duration: 0.2s;
-      margin-top: 0;
-      padding: 1rem 0;
-    }
-    header h1:hover {
-      color: #2eccff;
-    }
-    header .title {
-      display: block;
-      background: white;
-      filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));
-    }
-  
-    a {
-      text-decoration: none;
-      color: #5d5d5d;
-      transition-duration: 0.3s;
-    }
-    a:hover {
-      background: #ddfcff;
-      font-size: larger;
-      transition-duration: 0.2s;
-    }
-  
-    .menu-content {
-      box-sizing: border-box;
-      padding: 10px;
-      margin: 0;
-      display: inline-block;
-      width: 50%;
-    }
-  
-    main {
-      padding: 2%;
-      margin: 3%;
-    }
-  
-    section {
-      margin: 2rem 0;
-      background: white;
-      filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));
-    }
-  
-    #profile ul {
-      list-style: none;
-      padding-left: 0;
-    }
-  
-    #profile li {
-      margin: 0.5rem;
-    }
-    
-    #blog .section-content {
-      text-align: center;
-    }
-  
-    .section-title {
-      display: block;
-      border-top: solid #7186fb 3px;
-      padding: 5px;
-      text-align: center;
-    }
-    
-    .section-sub-title {
-      padding: 0.5rem;
-      border-left: solid #80fffc 4px;
-    }
-    
-    .section-content {
-      padding: 7px;
-    }
-    .content-with-img {
-      display: block;
-      margin: 1rem 0;
-      border: dashed 1px #cfcfcf;
-    }
-  
-    footer {
-      color: #6c6c6c;
-      margin: 0;
-      border-top: solid 1px;
-      padding: 2rem 0;
-      text-align: center;
-    }
-  
-  
-    @media screen and (min-width: 500px) {
-      .menu-content {
-        width: calc(100% / 4);
-      }
-    
-      main {
-        margin: 3rem 20%;
-      }
-    }
-  
-  
-    @media screen and (min-width: 900px) {
-      .menu-content {
-        width: calc(100% / 7);
-      }
-    }
-  </style>
-  
+    <meta charset="utf-8">
+    <title>ポートフォリオサイト</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta nmae="twitter:site" content="@sorarideblog">
+    <meta name="twitter:title" content="ポートフォリオサイト">
+    <meta name="twitter:description" content="そららいどのプログラミング経歴をまとめました。">
+    <meta name="twitter:image" content="https://sorarideblog.com/projects/portfolio/assets/twitter_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            color: #5d5d5d;
+        }
+
+        header h1 {
+            transition-duration: 0.2s;
+            margin-top: 0;
+            padding: 1rem 0;
+        }
+
+        header h1:hover {
+            color: #2eccff;
+        }
+
+        header .title {
+            display: block;
+            background: white;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+        }
+
+        a {
+            text-decoration: none;
+            color: #5d5d5d;
+            transition-duration: 0.3s;
+        }
+
+        a:hover {
+            background: #ddfcff;
+        }
+        
+        .img-wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .menu-content {
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 0;
+            display: inline-block;
+            width: 50%;
+            font-size: larger;
+        }
+
+        .menu-content:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2%;
+            margin: 3%;
+        }
+
+        section {
+            margin: 2rem 0;
+            background: white;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+        }
+
+        #profile ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #profile li {
+            margin: 0.5rem;
+        }
+
+        #blog .section-content {
+            text-align: center;
+        }
+
+        .section-title {
+            display: block;
+            border-top: solid #7186fb 3px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .section-sub-title {
+            padding: 0.5rem;
+            border-left: solid #80fffc 4px;
+        }
+
+        .section-content {
+            padding: 7px;
+        }
+
+        .content-with-img {
+            display: block;
+            margin: 1rem 0;
+            border: none 1px #cfcfcf;
+        }
+
+        footer {
+            color: #6c6c6c;
+            margin: 0;
+            border-top: solid 1px;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+
+        @media screen and (min-width: 500px) {
+            .menu-content {
+                width: calc(100% / 4);
+            }
+
+            main {
+                margin: 3rem 25%;
+            }
+        }
+
+
+        @media screen and (min-width: 900px) {
+            .menu-content {
+                width: calc(100% / 7);
+            }
+        }
+    </style>
+
 </head>
 <body>
 
-  <header>
+<header>
     <a id="top" class="title" href="index.html"><h1>PORTFOLIO</h1></a>
     <div class="menu-bar">
-      <a href="#profile" class="menu-content">プロフィール</a><a href="#experience" class="menu-content">制作実績</a>
-      <a href="#skill" class="menu-content">経験スキル</a><a href="#social-media" class="menu-content">情報発信</a>
-      <a href="#blog" class="menu-content">ブログ</a><a href="#contact" class="menu-content">連絡先</a>
+        <a href="#profile" class="menu-content">プロフィール</a>
+        <a href="#experience" class="menu-content">制作実績</a>
+        <a href="#skill" class="menu-content">経験スキル</a>
+        <a href="#social-media" class="menu-content">情報発信</a>
+<!--        <a href="#blog" class="menu-content">ブログ</a>-->
+        <a href="#contact" class="menu-content">連絡先</a>
     </div>
-  </header>
-  
-  
-  <main>
+</header>
+
+
+<main>
     <section id="profile">
-      <h2 class="section-title"><i class="fas fa-address-card"></i> プロフィール</h2>
-      <div class="section-content">
-        <ul>
-          <li>名前：そららいど</li>
-          <li>年齢：21歳</li>
-          <li>所属：大学工学部 電子情報工学科 3年</li>
-          <li>今年の目標：MacbookでMacbookのローン返済</li>
-          <li>趣味：散歩</li>
-          <li>好きな食べ物：蒙古タンメン</li>
-        </ul>
-      </div>
+        <h2 class="section-title"><i class="fas fa-address-card"></i> プロフィール</h2>
+        <div class="section-content">
+            <ul>
+                <li>名前：そららいど</li>
+                <li>年齢：22歳</li>
+                <li>所属：大学工学部 電子情報工学科 4年</li>
+                <li>趣味：散歩</li>
+                <li>好きな食べ物：蒙古タンメン</li>
+            </ul>
+        </div>
     </section>
     
     <section id="experience">
-      <h2 class="section-title"><i class="fas fa-trophy"></i> 制作実績</h2>
-      <div class="section-content">
-        <div class="content-with-img"><h3 class="section-sub-title"><a
-                href="https://sorarideblog.com/%e3%82%a4%e3%83%b3%e3%83%88%e3%83%ad%e3%82%af%e3%82%a4%e3%82%ba%e5%af%be%e6%88%a6%e3%82%a2%e3%83%97%e3%83%aa%e3%82%92%e4%bd%9c%e3%81%a3%e3%81%9f%ef%bc%88%e3%83%aa%e3%82%a2%e3%83%ab%e3%82%bf%e3%82%a4/">リアルタイムイントロゲーム
-          <i class="fas fa-external-link-alt"></i></a></h3>
-          JavaScript と Firebase Realtime Database を利用。
-          サイトにアクセスすると、リアルタイムで他の人とイントロクイズの対戦ができる。
-          <img src="assets/intro_game.jpg" alt="プレイの様子" width="100%">
+        <h2 class="section-title"><i class="fas fa-trophy"></i> 制作実績</h2>
+        <div class="section-content">
+            <div class="content-with-img">
+                <h3 class="section-sub-title">
+                    <a target="_blank" href="https://github.com/sorarideblog/online-study-room">オンライン作業部屋
+                        <i class="fas fa-external-link-alt"></i></a></h3>
+                JavaScript と Firebase Realtime Database を利用。
+                サイトにアクセスすると、リアルタイムで他の人とイントロクイズの対戦ができる。
+                <div class="img-wrapper"><img src="assets/intro_game.jpg" alt="プレイの様子" width="100%"></div>
+            </div>
+            <div class="content-with-img">
+                <h3 class="section-sub-title">
+                    <a target="_blank" href="https://github.com/sorarideblog/intro_game">リアルタイムイントロゲーム
+                <i class="fas fa-external-link-alt"></i></a></h3>
+                JavaScript と Firebase Realtime Database を利用。
+                サイトにアクセスすると、リアルタイムで他の人とイントロクイズの対戦ができる。
+                <div class="img-wrapper"><img src="assets/intro_game.jpg" alt="プレイの様子" width="100%"></div>
+            </div>
+            <div class="content-with-img">
+                <h3 class="section-sub-title">
+                    <a target="_blank" href="https://qiita.com/Sorara33/items/5f4a0069183a35b0a4b8">聴いた音楽の週間ランキングをツイートするプログラム
+                <i class="fas fa-external-link-alt"></i></a></h3>
+                <p>自分が１週間で聴いた曲の再生回数ランキングを週末に自動ツイート。</p>
+                <p>ランキング画像はPythonで作成。</p>
+                <div class="img-wrapper"><img src="assets/ranking_tweet.png" alt="ツイートの様子" width="100%"></div>
+            </div>
+            <div class="content-with-img">
+                <h3 class="section-sub-title">Androidアプリ ＋ Raspberry Pi（マイコン）</h3>
+                <p>Andoroidアプリから映像付きで遠隔操作できるラジコンカー。</p>
+                <p>マイコンはRaspberry Pi を使用。</p>
+                <div class="img-wrapper"><img src="assets/android_ragikon.jpg" alt="アプリのスクリーンショット" width="100%"></div>
+            </div>
+            <div class="content-with-img"><h3 class="section-sub-title">簡易掲示板サイト</h3>
+                PHP + MySQL + Googleアカウント認証 を使用。
+                <div class="img-wrapper"><img src="assets/Bulletin_board.jpg" alt="投稿時の画面" width="100%"></div>
+            </div>
         </div>
-        <div class="content-with-img"><h3 class="section-sub-title"><a href="https://qiita.com/Sorara33/items/5f4a0069183a35b0a4b8">聴いた音楽の週間ランキングをツイートするプログラム
-          <i class="fas fa-external-link-alt"></i></a></h3>
-          自分が１週間で聴いた曲の再生回数ランキングを週末に自動ツイート。
-          <img src="assets/raking_tweet.jpg" alt="ツイートの様子" width="100%">
-        </div>
-        <div class="content-with-img"><h3 class="section-sub-title">Androidアプリ＋マイコン</h3>
-          Andoroidアプリから映像付きで遠隔操作できるラジコンカー。マイコンはRaspberry Pi を使用。
-          <img src="assets/android_ragikon.jpg" alt="アプリのスクリーンショット" width="100%">
-        </div>
-        <div class="content-with-img"><h3 class="section-sub-title">簡易掲示板サイト</h3>
-          PHP + MySQL + Googleアカウント認証 を使用。
-          <img src="assets/Bulletin_board.jpg" alt="投稿時の画面" width="100%">
-        </div>
-      </div>
     </section>
     
     <section id="skill">
-      <h2 class="section-title"><i class="fas fa-check-double"></i> 経験スキル</h2>
-      <div class="section-content">
-        <ul>
-          <li>C言語によるマイコン操作、画像処理、音源操作</li>
-          <li>Flutterによるモバイルアプリ開発</li>
-          <li>Java・ソケット通信によるAndroidアプリ開発</li>
-          <li>Pythonによるニューラルネットワーク構築・学習、Twitter Bot・LINE Bot開発</li>
-          <li>Heroku環境へデプロイ</li>
-          <li>PHP・MySQLを用いた簡易掲示板サイト</li>
-          <li>Vue.jsとLast.fm APIを用いた音楽ランキングサイト（製作中）</li>
-          <li>HTML・CSS・JavaScript</li>
-        </ul>
-      </div>
+        <h2 class="section-title"><i class="fas fa-check-double"></i> 経験スキル</h2>
+        <div class="section-content">
+            <ul>
+                <li>Nuxt.js</li>
+                <li>C言語によるマイコン操作、画像処理、音源操作</li>
+                <li>Flutterによるモバイルアプリ開発</li>
+                <li>Java・ソケット通信によるAndroidアプリ開発</li>
+                <li>Pythonによるニューラルネットワーク構築・学習、Twitter Bot・LINE Bot開発</li>
+                <li>Heroku環境へデプロイ</li>
+                <li>PHP・MySQLを用いた簡易掲示板サイト</li>
+                <li>HTML・CSS・JavaScript</li>
+            </ul>
+        </div>
     </section>
     
     <section id="social-media">
-      <h2 class="section-title"><i class="fas fa-rss"></i> 情報発信</h2>
-      <div class="section-content">
-        <h3 class="section-sub-title"><a href="https://twitter.com/sorarideblog">Twitter <i class="fas fa-external-link-alt"></i></a></h3>
-        <a class="twitter-timeline" data-height="400px" href="https://twitter.com/sorarideblog?ref_src=twsrc%5Etfw">Tweets by sorarideblog</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <h3 class="section-sub-title">Qiita記事</h3>
-        <a href="https://qiita.com/Sorara33/items/5f4a0069183a35b0a4b8">
-          １週間で聞いた曲のランキングを毎週ツイートするbotを作った(Last.fm) <i class="fas fa-external-link-alt"></i>
-        </a>
-        <h3 class="section-sub-title">GitHub</h3>
-        <a href="https://github.com/sorarideblog/intro_game">
-          リアルタイムイントロゲーム <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
+        <h2 class="section-title"><i class="fas fa-rss"></i> 情報発信</h2>
+        <div class="section-content">
+            <h3 class="section-sub-title">
+                <a href="https://twitter.com/sorarideblog">Twitter <i
+                    class="fas fa-external-link-alt"></i></a></h3>
+            <div class="img-wrapper">
+                <a class="twitter-timeline" data-height="400" data-width="500" href="https://twitter.com/sorarideblog?ref_src=twsrc%5Etfw">Tweets by sorarideblog</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
+            <h3 class="section-sub-title">Qiita記事</h3>
+            <a href="https://qiita.com/Sorara33/items/5f4a0069183a35b0a4b8">
+                １週間で聞いた曲のランキングを毎週ツイートするbotを作った(Last.fm) <i class="fas fa-external-link-alt"></i>
+            </a>
+            
+            <h3 class="section-sub-title">GitHub</h3>
+            <a target="_blank" href="https://github.com/sorarideblog/">
+                GitHubプロフィール <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
     </section>
     
-    <section id="blog">
-      <h2 class="section-title"><i class="fab fa-wordpress-simple"></i> ブログ</h2>
-      <div class="section-content">
-        <a href="https://sorarideblog.com">そららいどblog <i class="fas fa-external-link-alt"></i></a>
-      </div>
-    </section>
+<!--    <section id="blog">-->
+<!--        <h2 class="section-title"><i class="fab fa-wordpress-simple"></i> ブログ</h2>-->
+<!--        <div class="section-content">-->
+<!--            <a href="https://sorarideblog.com">そららいどblog <i class="fas fa-external-link-alt"></i></a>-->
+<!--        </div>-->
+<!--    </section>-->
     
     <section id="contact">
-      <h2 class="section-title"><i class="fas fa-envelope"></i> 連絡先</h2>
-      <div class="section-content">
-        <ul>
-          <li>E-mail：sorarideblog@gmail.com</li>
-          <a href="https://twitter.com/sorarideblog">
-            <li>Twitter：@sorarideblog <i class="fas fa-external-link-alt"></i></li>
-          </a>
-        </ul>
-      </div>
+        <h2 class="section-title"><i class="fas fa-envelope"></i> 連絡先</h2>
+        <div class="section-content">
+            <ul>
+                <li>E-mail：sorarideblog@gmail.com</li>
+                <a href="https://twitter.com/sorarideblog">
+                    <li>Twitter：@sorarideblog <i class="fas fa-external-link-alt"></i></li>
+                </a>
+            </ul>
+        </div>
     </section>
-    
-  </main>
 
-  
-  <footer>
-    <p>このサイトの作成に5hかかりました</p>
+</main>
+
+
+<footer>
+    <!--    <p>このサイトの作成に5hかかりました</p>-->
     <p><a href="#top">トップへ <i class="fas fa-arrow-up"></i></a></p>
     
-    &copy sorarideblog 2019
-  </footer>
+    &copy sorarideblog 2019-2021
+</footer>
 
 
-  <script src="https://kit.fontawesome.com/0036737a61.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0036737a61.js" crossorigin="anonymous"></script>
 </body>
 </html>
