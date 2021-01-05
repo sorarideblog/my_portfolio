@@ -106,6 +106,7 @@
 
         .section-sub-title {
             padding: 0.5rem;
+            margin-top: 3rem;
             border-left: solid #80fffc 4px;
         }
 
@@ -115,7 +116,6 @@
 
         .content-with-img {
             display: block;
-            margin: 1rem 0;
             border: none 1px #cfcfcf;
         }
 
@@ -183,55 +183,98 @@
                 <h3 class="section-sub-title">
                     <a target="_blank" href="https://github.com/sorarideblog/online-study-room">オンライン作業部屋
                         <i class="fas fa-external-link-alt"></i></a></h3>
-                <ul>
-                    <li>オンライン上の仮想のルームで席を選んで作業。</li>
-                    <li>YouTubeで各ルームをライブ配信。</li>
-                    <li>ライブチャットでユーザーの入退室ログを記録。</li>
-                    <li>フロントエンドはNuxt.js、Firebase Authenticationを使用。</li>
-                    <li>バックエンドはAWS Lambda（Go言語）、Cloud Functions、Cloud Firestoreを使用。</li>
-                </ul>
                 <div class="img-wrapper">
                     <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">[新機能！] ルームで座席を選べるようになりました<br>！！<br>Googleアカウントがあればすぐに利用できます<a href="https://t.co/hHrjGEAVCu">https://t.co/hHrjGEAVCu</a> <a href="https://t.co/yoYOoERYNe">pic.twitter.com/yoYOoERYNe</a></p>&mdash; オンライン作業部屋 (@osr_soraride) <a href="https://twitter.com/osr_soraride/status/1337946517856944128?ref_src=twsrc%5Etfw">December 13, 2020</a></blockquote>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
+                <h4>開発期間</h4>
+                ３か月以上（現在も開発中）
+                <h4>使用した技術など</h4>
+                <ul>
+                    <li>フロントエンド：Nuxt.js、Vuetify、Firebase Authentication</li>
+                    <li>バックエンド：AWS Lambda（Go言語）、Cloud Functions、Cloud Firestore、AWS API Gateway（HTTP・WebSocket）</li>
+                    <li>YouTube Live Streaming API</li>
+                    <li>モバイルアプリ（開発中）：Flutter</li>
+                </ul>
+                <h4>特徴</h4>
+                <ul>
+                    <li>オンライン上の仮想のルームで席を選んで作業。</li>
+                    <li>YouTubeで各ルームをライブ配信。</li>
+                    <li>ライブチャットでユーザーの入退室ログを記録。</li>
+                </ul>
+                
             </div>
             
             <div class="content-with-img">
                 <h3 class="section-sub-title">
                     <a target="_blank" href="https://github.com/sorarideblog/intro_game">リアルタイムイントロゲーム
                 <i class="fas fa-external-link-alt"></i></a></h3>
-                <ul>
-                    <li>JavaScript と Firebase Realtime Database を使用。</li>
-                    <li>リアルタイムで他の人とイントロクイズの対戦ができる。</li>
-                </ul>
                 <div class="img-wrapper"><img src="assets/intro_game.jpg" alt="プレイの様子" width="100%"></div>
+                <h4>使用した技術など</h4>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Firebase Realtime Database</li>
+                </ul>
+                <h4>特徴</h4>
+                <ul>
+                    <li>リアルタイムでオンラインの他の人とイントロクイズの対戦ができる。</li>
+                </ul>
             </div>
             
             <div class="content-with-img">
                 <h3 class="section-sub-title">
                     <a target="_blank" href="https://qiita.com/Sorara33/items/5f4a0069183a35b0a4b8">聴いた音楽の週間ランキングをツイートするプログラム
                 <i class="fas fa-external-link-alt"></i></a></h3>
-                <ul>
-                <li>自分が１週間で聴いた曲の再生回数ランキングを週末に自動ツイート。</li>
-                <li>ランキング画像はPythonで作成。</li>
-                </ul>
                 <div class="img-wrapper"><img src="assets/ranking_tweet.png" alt="ツイートの様子" width="100%"></div>
+                <h4>開発期間</h4>
+                約１週間
+                <h4>使用した技術など</h4>
+                <ul>
+                    <li>楽曲視聴履歴取得：Last.fm API</li>
+                    <li>Twitter API</li>
+                    <li>LINE Messaging API</li>
+                    <li>ランキング画像生成：Python</li>
+                    <li>ホスティング：Heroku</li>
+                </ul>
+                <h4>特徴</h4>
+                <ul>
+                    <li>自分が１週間で聴いた曲の再生回数ランキングを週末に自動ツイート。</li>
+                    <li>月末、年末にも投稿</li>
+                </ul>
             </div>
             
             <div class="content-with-img">
                 <h3 class="section-sub-title">Androidアプリ ＋ Raspberry Pi（マイコン）</h3>
-                <ul>
-                    <li>Andoroidアプリから映像付きでラジコンカーを遠隔操作。</li>
-                    <li>マイコンはRaspberry Pi を使用。</li>
-                </ul>
                 <div class="img-wrapper"><img src="assets/android_ragikon.jpg" alt="アプリのスクリーンショット" width="100%"></div>
+                <h4>開発期間</h4>
+                １か月
+                <h4>使用した技術・機器</h4>
+                <ul>
+                    <li>マイコン：Raspberry Pi</li>
+                    <li>プログラミング言語：Java、Ｃ言語</li>
+                    <li>TCP・UDP通信</li>
+                </ul>
+                <h4>特徴</h4>
+                <ul>
+                    <li>Andoroidアプリから映像付きで無線LAN経由でラジコンカーを遠隔操作。</li>
+                </ul>
             </div>
             
             <div class="content-with-img"><h3 class="section-sub-title">簡易掲示板サイト</h3>
-                <ul>
-                    <li>PHP + MySQL + Googleアカウント認証 を使用。</li>
-                </ul>
                 <div class="img-wrapper"><img src="assets/Bulletin_board.jpg" alt="投稿時の画面" width="100%"></div>
+                <h4>開発期間</h4>
+                ２週間
+                <h4>使用した技術など</h4>
+                <ul>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Googleアカウント認証</li>
+                </ul>
+                <h4>特徴</h4>
+                <ul>
+                    <li>小説（テキスト）の投稿・編集・削除</li>
+                    <li>SQLインジェクション等に対する基本的なセキュリティ対応</li>
+                </ul>
             </div>
         </div>
     </section>
